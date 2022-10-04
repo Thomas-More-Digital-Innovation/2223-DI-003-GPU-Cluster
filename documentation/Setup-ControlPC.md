@@ -1,4 +1,5 @@
 # Setup of control computer
+
 This page is dedicated to the installation of the setup computer.
 
 1. Install Ubuntu 22.04 LTS using the defaults.  
@@ -18,10 +19,10 @@ This page is dedicated to the installation of the setup computer.
    - `sudo iptables -A FORWARD -i VLAN20 -o enp0s31f6 -j ACCEPT`
 1. Install the DHCP and DNS server, _dnsmasq_ in this case.  
    You can do this using `sudo apt install dnsmasq`.
-   An example configuration is provided [here](configuration/control/dnsmasq.conf)
+   An example configuration is provided [here](/code/configuration/control/dnsmasq.conf)
 1. Install matchbox to TFTP-boot Fedora CoreOS / Flatcar Linux.
    You can do this using these instruction:  
-   -  `git clone https://github.com/poseidon/matchbox.git`
-   - Follow the instructions at https://matchbox.psdn.io/network-setup/
-   - Follow the instructions at https://matchbox.psdn.io/deployment/
+   - `git clone https://github.com/poseidon/matchbox.git`
+   - Follow the instructions at <https://matchbox.psdn.io/network-setup/>
+   - Follow the instructions at <https://matchbox.psdn.io/deployment/>
 1. Install typhoon to provision the bare-metal cluster.  
