@@ -9,6 +9,24 @@ Driver version:
 Container toolkit image:  
 `nvcr.io/nvidia/k8s/container-toolkit:v1.11.0-ubuntu20.04`
 
+Reference guide:  
+<https://github.com/jepio/nvidia-driver-container/tree/flatcar-update/flatcar>
+
+Container by @jepio:  
+<https://github.com/jepio/nvidia-driver-container/pkgs/container/nvidia-driver-container>
+
+NVIDIA container toolkit:  
+<https://gitlab.com/nvidia/container-toolkit/container-toolkit>
+
+NVIDIA container toolkit user guide:  
+<https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/user-guide.html>
+
+NVIDIA container toolkit containers:  
+<https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/container-toolkit/tags>
+
+NVIDIA CUDA containers:  
+<https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags>
+
 ```bash
 # Load kernel modules required for NVIDIA drivers.
 sudo modprobe -a loop i2c_core ipmi_msghandler \
