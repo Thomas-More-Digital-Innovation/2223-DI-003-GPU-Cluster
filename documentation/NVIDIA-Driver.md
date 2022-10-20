@@ -52,11 +52,17 @@ docker info | grep -i nvidia
 DRIVER_VERSION=510.47.03
 
 # Build the NVIDIA driver kernel modules on the host.
+# docker run -d --privileged --pid=host \
+#      --tmpfs /tmp \
+#      -v /run/nvidia:/run/nvidia:shared \
+#      -v /tmp/nvidia:/var/log \
+#      ghcr.io/jepio/nvidia-driver-container:${DRIVER_VERSION}-flatcar update
+
 docker run -d --privileged --pid=host \
      --tmpfs /tmp \
      -v /run/nvidia:/run/nvidia:shared \
      -v /tmp/nvidia:/var/log \
-     ghcr.io/jepio/nvidia-driver-container:${DRIVER_VERSION}-flatcar update
+     ghcr.io/jepio/nvidia-driver-container:${DRIVER_VERSION}-flatcar init
 
 # Check if the kernel modules are loaded.
 lsmod | grep -i nvidia
