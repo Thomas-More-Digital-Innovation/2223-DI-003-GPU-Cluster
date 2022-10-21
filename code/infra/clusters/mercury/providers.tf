@@ -104,6 +104,36 @@ module "mercury" {
       name   = "K8S-C-9C2FZG2"
       mac    = "48:4d:7e:d3:67:c6"
       domain = "K8S-C-9C2FZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9BZCZG2"
+      mac    = "48:4d:7e:d3:6f:aa"
+      domain = "K8S-C-9BZCZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9BVKZG2"
+      mac    = "48:4d:7e:d3:6f:82"
+      domain = "K8S-C-9BVKZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9C1BZG2"
+      mac    = "48:4d:7e:d3:65:c1"
+      domain = "K8S-C-9C1BZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9BYJZG2"
+      mac    = "48:4d:7e:d3:33:b3"
+      domain = "K8S-C-9BYJZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9C2GZG2"
+      mac    = "48:4d:7e:d3:69:2d"
+      domain = "K8S-C-9C2GZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9C3BZG2"
+      mac    = "48:4d:7e:d3:76:c5"
+      domain = "K8S-C-9C3BZG2.cluster.internal"
     }
   ]
 }
