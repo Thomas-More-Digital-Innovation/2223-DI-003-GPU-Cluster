@@ -12,7 +12,8 @@ systemd:
         [Service]
         Type=oneshot
         Environment="DRIVER_VERSION=510.47.03"
-        ExecStart=/usr/sbin/modprobe -a loop i2c_core ipmi_msghandler && /usr/bin/echo -e "loop\ni2c_core\nipmi_msghandler" | /usr/bin/tee /etc/modules-load.d/driver.conf
+        ExecStart=/usr/sbin/modprobe -a loop i2c_core ipmi_msghandler
+        ExecStart=/usr/bin/echo -e "loop\ni2c_core\nipmi_msghandler" | /usr/bin/tee /etc/modules-load.d/driver.conf
         ExecStart=/usr/bin/docker run --rm --privileged -v "/etc/docker:/etc/docker" -v "/run/nvidia:/run/nvidia" -v "/run/docker.sock:/run/docker.sock" -v "/opt/nvidia-runtime:/opt/nvidia-runtime" -e "RUNTIME=docker" -e "RUNTIME_ARGS=--socket /run/docker.sock" -e "DOCKER_SOCKET=/run/docker.sock" nvcr.io/nvidia/k8s/container-toolkit:v1.11.0-ubuntu20.04 "/opt/nvidia-runtime"
         ExecStart=/usr/bin/systemctl restart docker
         ExecStart=/usr/bin/docker run -d --privileged --pid=host --tmpfs /tmp -v /run/nvidia:/run/nvidia:shared -v /tmp/nvidia:/var/log ghcr.io/jepio/nvidia-driver-container:${DRIVER_VERSION}-flatcar init
