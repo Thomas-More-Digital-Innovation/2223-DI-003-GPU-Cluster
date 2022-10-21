@@ -36,9 +36,17 @@ module "mercury" {
   # installation
   cached_install          = true  
 
-  worker_snippets = [
-    file("./nvidia-unit.yaml")
-  ]
+  snippets = {
+    "K8S-G-9C3CZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9C2LZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9C1JZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9C0DZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9BTDZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9C1CZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9BYFZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9C0KZG2" = [file("./nvidia-unit.yaml")]
+    "K8S-G-9BVBZG2" = [file("./nvidia-unit.yaml")]
+  }
 
   # machines
   controllers = [{
