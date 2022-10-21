@@ -99,6 +99,11 @@ module "mercury" {
       name   = "K8S-G-9BVBZG2",
       mac    = "48:4d:7e:d3:74:47"
       domain = "K8S-G-9BVBZG2.cluster.internal"
+    },
+    {
+      name   = "K8S-C-9C2FZG2"
+      mac    = "48:4d:7e:d3:67:c6"
+      domain = "K8S-C-9C2FZG2.cluster.internal"
     }
   ]
 }

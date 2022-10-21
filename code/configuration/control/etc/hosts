@@ -19,3 +19,4 @@ ff02::2 ip6-allrouters
 172.16.0.17	K8S-G-9BYFZG2	K8S-G-9BYFZG2.cluster.internal
 172.16.0.18	K8S-G-9C0KZG2	K8S-G-9C0KZG2.cluster.internal
 172.16.0.19	K8S-G-9BVBZG2	K8S-G-9BVBZG2.cluster.internal
+172.16.0.20 K8S-C-9C2FZG2   K8S-C-9C2FZG2.cluster.internal

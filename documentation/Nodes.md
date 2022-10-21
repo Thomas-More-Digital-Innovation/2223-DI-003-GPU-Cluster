@@ -17,7 +17,7 @@ This is a list of nodes, with the hardware inside.
 | 9C0DZG2      | 20317287602          | 2             | 48:4d:7e:d3:66:9c | K8S-G-9C0DZG2 |
 | 9BZCZG2      | 20315561330          | 0             |                   |               |
 | 9C1JZG2      | 20319247154          | 2             | 48:4d:7e:d3:71:aa | K8S-G-9C1JZG2 |
-| 9C2FZG2      | 20320740146          | 0             |                   |               |
+| 9C2FZG2      | 20320740146          | 0             | 48:4d:7e:d3:67:c6 | K8S-C-9C2FZG2 |
 | 9C2LZG2      | 20321020082          | 2             | 48:4d:7e:d3:6b:55 | K8S-G-9C2LZG2 |
 | 9C2KZG2      | 20320973426          | 0             | 48:4d:7e:d3:72:a0 | K8S-M-9C2KZG2 |
 | 9C3CZG2      | 20322279794          | 2             | 48:4d:7e:d3:66:70 | K8S-G-9C3CZG2 |
