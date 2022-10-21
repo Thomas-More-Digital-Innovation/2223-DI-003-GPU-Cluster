@@ -36,6 +36,10 @@ module "mercury" {
   # installation
   cached_install          = true  
 
+  worker_snippets = [
+    file("./nvidia-unit.yaml")
+  ]
+
   # machines
   controllers = [{
     name   = "K8S-M-9C2KZG2"

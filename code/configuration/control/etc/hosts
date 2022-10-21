@@ -1,0 +1,21 @@
+127.0.0.1	localhost
+#127.0.1.1	K8S-9C1KZG2
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+172.16.0.1	K8S-9C1KZG2	matchbox	matchbox.cluster.internal
+172.16.0.10	K8S-M-9C2KZG2	K8S-M-9C2KZG2.cluster.internal	mercury.cluster.internal
+172.16.0.11	K8S-G-9C3CZG2	K8S-G-9C3CZG2.cluster.internal
+172.16.0.12	K8S-G-9C2LZG2	K8S-G-9C2LZG2.cluster.internal
+172.16.0.13	K8S-G-9C1JZG2	K8S-G-9C1JZG2.cluster.internal
+172.16.0.14	K8S-G-9C0DZG2	K8S-G-9C0DZG2.cluster.internal
+172.16.0.15	K8S-G-9BTDZG2	K8S-G-9BTDZG2.cluster.internal
+172.16.0.16	K8S-G-9C1CZG2	K8S-G-9C1CZG2.cluster.internal
+172.16.0.17	K8S-G-9BYFZG2	K8S-G-9BYFZG2.cluster.internal
+172.16.0.18	K8S-G-9C0KZG2	K8S-G-9C0KZG2.cluster.internal
+172.16.0.19	K8S-G-9BVBZG2	K8S-G-9BVBZG2.cluster.internal
